@@ -26,7 +26,7 @@ def update_location(x, y, dir):
 def solution(dirs):
     # 원점 (5,5)로 변경
     x, y = 5,5
-    # 자동 중복제거 set() 함수
+    # 자동 중복제거 set() 함수 - (한번 가본길은 카운트하지 않는다.)
     ans = set()
 
     # 문자열 dirs를 문자 하나씩 순회
