@@ -6,7 +6,7 @@
 
 def solution(s):
     
-    num = 0
+    x = 0
     n = len(s)
     for i in range(n):
         stack = []
@@ -28,9 +28,9 @@ def solution(s):
                     break
         else:
             if not stack:   # 전부다 올바른 괄호일 경우
-                num += 1
+                x += 1
 
-    return num
+    return x
 
 s = "}]()[{"
 print(solution(s))
